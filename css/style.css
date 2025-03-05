@@ -1,0 +1,162 @@
+
+
+/* QUIZ CARD REGION */
+/* ========================================= */
+.app-container{
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* ========================================= */
+
+
+/* JAVASCRIPT */
+/* ========================================= */
+#button-box,#quiz-box,#score-box{
+    display: none;
+}
+#button-box.active,#quiz-box.active,#score-box.active{
+    display: block;
+}
+/* ========================================= */
+
+
+
+
+/* START BUTTON REGION */
+/* ========================================= */
+#button-box{
+    text-align: center;
+}
+/* ========================================= */
+
+
+
+
+/* QUESTION REGION -HEADER */
+/* ========================================= */
+#quiz-box{
+    background-color: rgb(240, 235, 227);
+}
+#quiz-box #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.time{
+    display: flex;
+    align-items: center;
+    background:rgb(100, 107, 100);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.time .time-second{
+    margin-left: 7px;
+    color: black;
+    background: yellow;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#quiz-box #header .time-line{
+    position: absolute;
+    border-bottom: 3px solid orange;
+}
+.time-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: orange;
+}
+/* ========================================= */
+
+
+
+/* QUESTION REGION -BODY */
+/* ========================================= */
+.question-title{
+    padding-inline: 15px;
+    margin-top: 10px;
+}
+.option-list{
+    padding: 15px 10px;
+}
+.option-list .option{
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer; /* see handle */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.option-list .option:hover{
+    color: black;
+    background: yellow;
+}
+.option-list .option.correct{
+    color: white;
+    background: white;
+    background-color: green;
+}
+.option-list .option.incorrect{
+    color:white;
+    background: white;
+    background-color:red;
+}
+.option-list .option.disabled{
+    pointer-events: none;
+}
+/* ========================================= */
+
+
+
+/* QUESTION REGION - FOOTER */
+/* ========================================= */
+.summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Burada ilk başta buton görünmezdir. */
+#next-btn{
+    opacity: 0;
+}
+#next-btn.show{
+    opacity: 1;
+}
+/* ========================================= */
+
+
+
+/* SCORE REGION */
+/* ========================================= */
+#score-box{
+    text-align: center;
+    padding: 30px;
+}
+#score-box i{
+    font-size: 50px;
+    color: rgb(252, 248, 0);
+}
+#score-box .score-text{
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 20px;
+}
+#score-box .point-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 16px;
+}
+/* ========================================= */
